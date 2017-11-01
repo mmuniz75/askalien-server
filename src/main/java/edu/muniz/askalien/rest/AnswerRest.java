@@ -12,12 +12,12 @@ import edu.muniz.askalien.model.Answer;
 import edu.muniz.askalien.service.AnswerService;
 
 @RestController
+@CrossOrigin(origins = {"http://localhost:4200", "http://askalien-server.us-east-1.elasticbeanstalk.com"})
 public class AnswerRest {
 	
 	@Autowired
 	AnswerService service;
 	
-	@CrossOrigin
 	@RequestMapping("/ask")
 	public List<Answer> getAnnswer(@RequestParam String question){
 		return service.searchAnswers(question);
