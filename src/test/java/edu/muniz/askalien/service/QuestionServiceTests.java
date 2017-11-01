@@ -3,9 +3,6 @@ package edu.muniz.askalien.service;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,6 +49,44 @@ public class QuestionServiceTests {
 			assertEquals(question.getIp(),IP);
 			assertEquals(question.getCountry(),COUNTRY);
 			assertEquals(question.getAnswer().getId(),ANSWER_ID);
+		
+		}finally{
+			if (questionId!=null)
+				repo.delete(questionId);
+		}	
+		
+	}
+	
+	@Test
+	public void sendFeedBack(){
+		
+		final String NAME = "Mythi";
+		final String EMAIL = "mythi@mhythi.copm.br";
+		final String COMMENTS = "very good unswer";
+		
+		
+		Integer questionId = null;
+		try {
+			Question question = new Question();
+			question.setIp("1.2.3.4");
+			question.setText("just a test");
+			repo.save(question);
+			questionId = question.getId();
+			
+			question.setCreator(NAME);
+			question.setEmail(EMAIL);
+			question.setFeedback(COMMENTS);
+			
+			service.sendFeedback(question);
+			
+			question = null;
+			
+			question = repo.findOne(questionId);
+			
+			assertEquals(question.getCreator(),NAME);
+			assertEquals(question.getEmail(),EMAIL);
+			assertEquals(question.getFeedback(),COMMENTS);
+			
 		
 		}finally{
 			if (questionId!=null)

@@ -1,27 +1,31 @@
 package edu.muniz.askalien.rest;
 
 
-import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
+import com.fasterxml.jackson.databind.SerializationFeature;
+
 import edu.muniz.askalien.dao.QuestionRepository;
 import edu.muniz.askalien.model.Question;
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -63,6 +67,55 @@ public class QuestionRestTests {
 		}finally{
 			if(question !=null)
 				repo.delete(question.getId());
+		}		
+			
+			
+	}
+	
+	
+	@Test
+	public void testFeedBack() throws Exception{
+		final String NAME = "Mythi";
+		final String EMAIL = "mythi@mhythi.copm.br";
+		final String COMMENTS = "very good unswer";
+		
+		Integer questionId = null;
+		try {
+		
+			Question question = new Question();
+			question.setIp("1.2.3.4");
+			question.setText("just a test");
+			repo.save(question);
+			questionId = question.getId();
+						
+			question = new Question();
+			question.setCreator(NAME);
+			question.setEmail(EMAIL);
+			question.setFeedback(COMMENTS);
+			question.setId(questionId);
+			
+			ObjectMapper mapper = new ObjectMapper();
+		    mapper.configure(SerializationFeature.WRAP_ROOT_VALUE, false);
+		    ObjectWriter ow = mapper.writer().withDefaultPrettyPrinter();
+		    String requestJson=ow.writeValueAsString(question);
+			
+		    String URL="/feedback";
+			this.mvc.perform(post(URL).contentType(MediaType.APPLICATION_JSON)
+					                  .content(requestJson))	
+				.andExpect(status().isOk())
+			;
+			
+			question = null;
+			
+			question = repo.findOne(questionId);
+			assertEquals(question.getCreator(),NAME);
+			assertEquals(question.getEmail(),EMAIL);
+			assertEquals(question.getFeedback(),COMMENTS);
+			
+		
+		}finally{
+			if(questionId !=null)
+				repo.delete(questionId);
 		}		
 			
 			

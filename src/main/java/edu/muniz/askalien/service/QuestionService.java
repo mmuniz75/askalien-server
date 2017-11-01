@@ -46,19 +46,17 @@ public class QuestionService{
 	}
 
 
-	/*
-	public void sendFeedback() throws Exception{
-		try{
-			super.update();
-			Question question = (Question)object;
-			question.setFeedback("");
-		}catch(Exception ex){
-			ex.fillInStackTrace();
-		}
-		this.object = null;
+	
+	public void sendFeedback(Question questionForm) {
+		Question question = questionRepo.findOne(questionForm.getId());
+		question.setCreator(questionForm.getCreator());
+		question.setEmail(questionForm.getEmail());
+		question.setFeedback(questionForm.getFeedback());
+		
+		questionRepo.save(question);
 		
 	}
-	*/
+	
 	
 
 	
