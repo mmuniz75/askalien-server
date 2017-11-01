@@ -27,7 +27,6 @@ public class AnswerServiceTests {
 		
 		assertTrue(answers.size()>=2);
 		assertTrue(answers.get(0).getSubject().contains("Zigs"));
-		
 	}
 
 }

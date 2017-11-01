@@ -27,4 +27,10 @@ public class AnswerRepositoryTests {
 		List<AnswerSummary> answers = repo.findByIdIn(ids);
 		assertEquals(answers.size(),3);
 	}
+	
+	@Test
+	public void testFindAnwer(){
+		Answer answer = repo.findOne(1);
+		assertEquals(answer.getSubject(),"Is the planet Earth is undergoing a transformation in the near future?");
+	}	
 }

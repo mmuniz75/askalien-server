@@ -1,6 +1,7 @@
 package edu.muniz.askalien.model;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -36,6 +37,7 @@ public class Answer implements Serializable,Model,Comparable<Answer>{
 	private String content;
 	
 	@Column(length=200)
+	@JsonProperty("link")
 	private String url;
 	
 	@ManyToOne(fetch=FetchType.LAZY) @JoinColumn(name="videoNumber")
@@ -59,6 +61,25 @@ public class Answer implements Serializable,Model,Comparable<Answer>{
 		this.video = video;
 	}
 
+	@Transient
+	private Integer questionId;
+
+	public Integer getQuestionId() {
+		return questionId;
+	}
+
+	public void setQuestionId(Integer questionId) {
+		this.questionId = questionId;
+	}
+
+	public String getDate() {
+		String date = "";
+		if(video!=null){
+			SimpleDateFormat dt1 = new SimpleDateFormat("MM/dd/yyyy");
+			date = dt1.format(video.getCreationDate());
+		}	
+		return date;
+	}
 
 
 	@Transient
