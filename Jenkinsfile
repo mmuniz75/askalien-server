@@ -9,11 +9,11 @@ node {
    }
 
    stage('test') {
-     sh "export LUCENE_INDEX_DIR=/var/lib/jenkins/lucene && '${mvnHome}/bin/mvn' -DSPRING_DATASOURCE_URL=jdbc:postgresql://${env.POSTGRESQL_TEST_SERVICE_HOST}:5432/mythidb_test -DSPRING_DATASOURCE_USERNAME=${env.POSTGRESQL_TEST_PASSWORD} -DSPRING_DATASOURCE_PASSWORD=${env.POSTGRESQL_TEST_PASSWORD} -DSPRING_JPA_HIBERNATE_DDL_AUTO=none -DSPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect test"
+     sh "export LUCENE_INDEX_DIR=/var/lib/jenkins/lucene && '${mvnHome}/bin/mvn' -DSPRING_DATASOURCE_URL=jdbc:postgresql://${env.POSTGRESQL_TEST_SERVICE_HOST}:5432/mythidb_test -DSPRING_DATASOURCE_USERNAME=${env.POSTGRESQL_TEST_USER} -DSPRING_DATASOURCE_PASSWORD=${env.POSTGRESQL_TEST_PASSWORD} -DSPRING_JPA_HIBERNATE_DDL_AUTO=none -DSPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect test"
    }
 
    stage('package') {
-     sh "'${mvnHome}/bin/mvn' package"
+     sh "'${mvnHome}/bin/mvn' -Dmaven.test.skip=true package"
    }
 
    stage('config') {
@@ -23,7 +23,7 @@ node {
    }
    
     stage('Set AWS archive') {
-     sh "cp target/*.war deploy"   
+     sh "cp target/*.jar deploy"   
     } 
     
     stage('Deploy on AWS') {
