@@ -17,8 +17,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-//@RunWith(SpringRunner.class)
-//@SpringBootTest
+import static org.junit.Assert.*;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class AnswerRestTests {
 	
 	@Autowired
@@ -33,6 +35,7 @@ public class AnswerRestTests {
 	
 	@Test
 	public void testSearch() throws Exception{
+		assertTrue(true);
 		String URL4="/ask?question=zigs";
 				
 		this.mvc.perform(get(URL4))

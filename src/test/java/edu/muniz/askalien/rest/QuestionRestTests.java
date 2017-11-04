@@ -25,10 +25,11 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import edu.muniz.askalien.dao.QuestionRepository;
 import edu.muniz.askalien.model.Question;
+import static org.junit.Assert.*;
 
 
-//@RunWith(SpringRunner.class)
-//@SpringBootTest
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class QuestionRestTests {
 	
 	@Autowired
@@ -47,6 +48,8 @@ public class QuestionRestTests {
 	private Question question = null;
 	@Test
 	public void testDetailAnwer() throws Exception{
+		assertTrue(true);
+
 		final String QUESTION = "test ** alien captured Brazil **";
 		final Integer ANSWER_ID = 181;
 		
@@ -75,6 +78,7 @@ public class QuestionRestTests {
 	
 	@Test
 	public void testFeedBack() throws Exception{
+		assertTrue(true);
 		final String NAME = "Mythi";
 		final String EMAIL = "mythi@mhythi.copm.br";
 		final String COMMENTS = "very good unswer";
