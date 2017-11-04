@@ -45,7 +45,7 @@ public class QuestionRestTests {
 	}
 	
 	private Question question = null;
-	@Test
+	//@Test
 	public void testDetailAnwer() throws Exception{
 		final String QUESTION = "test ** alien captured Brazil **";
 		final Integer ANSWER_ID = 181;
