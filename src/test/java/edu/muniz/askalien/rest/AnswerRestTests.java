@@ -34,8 +34,7 @@ public class AnswerRestTests {
 	@Test
 	public void testSearch() throws Exception{
 		String URL4="/ask?question=zigs";
-		
-		System.out.println(this.mvc.perform(get(URL4)).andDo(print()));
+				
 		this.mvc.perform(get(URL4))
 			.andExpect(status().isOk())
 			.andExpect(content().string(containsString("Zigs")));
