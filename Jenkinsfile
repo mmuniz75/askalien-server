@@ -9,7 +9,7 @@ node {
    }
 
    stage('test') {
-     sh "export LUCENE_INDEX_DIR=/var/lib/jenkins/lucene && '${mvnHome}/bin/mvn' -DSPRING_DATASOURCE_URL=jdbc:postgresql://${env.POSTGRESQL_TEST_SERVICE_HOST}:5432/mythidb_test -DSPRING_DATASOURCE_USERNAME=${env.POSTGRESQL_TEST_USER} -DSPRING_DATASOURCE_PASSWORD=${env.POSTGRESQL_TEST_PASSWORD} -DSPRING_JPA_HIBERNATE_DDL_AUTO=none -DSPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect test"
+     sh "export LUCENE_INDEX_DIR=/efs/jenkins/lucene && '${mvnHome}/bin/mvn' -DSPRING_DATASOURCE_URL=jdbc:postgresql://${env.POSTGRESQL_TEST_SERVICE_HOST}:5432/mythidb_test -DSPRING_DATASOURCE_USERNAME=${env.POSTGRESQL_TEST_USER} -DSPRING_DATASOURCE_PASSWORD=${env.POSTGRESQL_TEST_PASSWORD} -DSPRING_JPA_HIBERNATE_DDL_AUTO=none -DSPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect test"
    }
 
    stage('package') {
