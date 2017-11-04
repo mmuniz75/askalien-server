@@ -6,7 +6,7 @@ environment-defaults:
     branch: null
     repository: null
 deploy:
-  artifact: target/askalien-server-1.0.0-SNAPSHOT.jar   
+  artifact: ../target/askalien-server-1.0.0-SNAPSHOT.jar   
 global:
   application_name: askalien-server
   default_ec2_keyname: mythi
