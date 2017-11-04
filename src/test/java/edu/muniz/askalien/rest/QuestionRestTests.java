@@ -27,8 +27,8 @@ import edu.muniz.askalien.dao.QuestionRepository;
 import edu.muniz.askalien.model.Question;
 
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class QuestionRestTests {
 	
 	@Autowired
@@ -45,7 +45,7 @@ public class QuestionRestTests {
 	}
 	
 	private Question question = null;
-	//@Test
+	@Test
 	public void testDetailAnwer() throws Exception{
 		final String QUESTION = "test ** alien captured Brazil **";
 		final Integer ANSWER_ID = 181;

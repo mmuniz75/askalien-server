@@ -17,8 +17,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class AnswerRestTests {
 	
 	@Autowired
@@ -31,7 +31,7 @@ public class AnswerRestTests {
 		this.mvc = MockMvcBuilders.webAppContextSetup(this.context).build();
 	}
 	
-	//@Test
+	@Test
 	public void testSearch() throws Exception{
 		String URL4="/ask?question=zigs";
 				
