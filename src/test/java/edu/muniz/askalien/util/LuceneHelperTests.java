@@ -32,7 +32,7 @@ public class LuceneHelperTests {
 	
 	@Test
 	public void testEnv(){
-		assertNotEquals(System.getenv("LUCENE_INDEX_DIR"),"","LUCENE_INDEX_DIR not set");
+		assertNotNull(System.getenv("LUCENE_INDEX_DIR"));
 		
 	}
 
