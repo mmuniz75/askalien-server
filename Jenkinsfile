@@ -9,7 +9,8 @@ node {
    }
 
    stage('test') {
-     sh "export LUCENE_INDEX_DIR=/efs/jenkins/lucene && '${mvnHome}/bin/mvn' -DSPRING_DATASOURCE_URL=jdbc:postgresql://${env.POSTGRESQL_TEST_SERVICE_HOST}:5432/mythidb_test -DSPRING_DATASOURCE_USERNAME=${env.POSTGRESQL_TEST_USER} -DSPRING_DATASOURCE_PASSWORD=${env.POSTGRESQL_TEST_PASSWORD} -DSPRING_JPA_HIBERNATE_DDL_AUTO=none -DSPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect test"
+     env.LUCENE_INDEX_DIR="${env.JENKINS_HOME}/lucene"
+     sh "'${mvnHome}/bin/mvn' -DSPRING_DATASOURCE_URL=jdbc:postgresql://${POSTGRESQL_TEST_SERVICE_HOST}:5432/mythidb_test -DSPRING_DATASOURCE_USERNAME=${POSTGRESQL_TEST_USER} -DSPRING_DATASOURCE_PASSWORD=${POSTGRESQL_TEST_PASSWORD} -DSPRING_JPA_HIBERNATE_DDL_AUTO=none -DSPRING_JPA_DATABASE_PLATFORM=org.hibernate.dialect.PostgreSQLDialect test"
    }
 
    stage('package') {
@@ -17,9 +18,9 @@ node {
    }
 
    stage('config') {
-     sh "sed -i -e 's|<POSTGRESQL_SERVICE_HOST>|${env.POSTGRESQL_SERVICE_HOST}|g' deploy/.ebextensions/environmentvariables.config"
-     sh "sed -i -e 's|<POSTGRESQL_PASSWORD>|${env.POSTGRESQL_PASSWORD}|g' deploy/.ebextensions/environmentvariables.config"
-     sh "sed -i -e 's|<POSTGRESQL_USER>|${env.POSTGRESQL_USER}|g' deploy/.ebextensions/environmentvariables.config"
+     sh "sed -i -e 's|<POSTGRESQL_SERVICE_HOST>|${POSTGRESQL_SERVICE_HOST}|g' deploy/.ebextensions/environmentvariables.config"
+     sh "sed -i -e 's|<POSTGRESQL_PASSWORD>|${POSTGRESQL_PASSWORD}|g' deploy/.ebextensions/environmentvariables.config"
+     sh "sed -i -e 's|<POSTGRESQL_USER>|${POSTGRESQL_USER}|g' deploy/.ebextensions/environmentvariables.config"
    }
    
     stage('Set AWS archive') {
@@ -27,8 +28,8 @@ node {
     } 
     
     stage('Deploy on AWS') {
-      env.PATH="/var/jenkins_home/.local/bin:${env.PATH}"
-	    sh "cd deploy && eb deploy"
+      env.PATH="/usr/share/tomcat8/.local/bin:${env.PATH}"
+      sh "cd deploy && eb deploy"
     }    
     
 }
