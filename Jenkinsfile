@@ -31,5 +31,5 @@ node {
       env.PATH="/usr/share/tomcat8/.local/bin:${env.PATH}"
       sh "cd deploy && eb deploy"
     }    
-    
+   
 }

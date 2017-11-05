@@ -12,7 +12,7 @@ import edu.muniz.askalien.model.Answer;
 import edu.muniz.askalien.service.AnswerService;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200", "http://askalien-server.us-east-1.elasticbeanstalk.com"})
+@CrossOrigin(origins = {"http://localhost:4200", "http://aws-website-askalien-8enqo.s3-website-us-east-1.amazonaws.com"})
 public class AnswerRest {
 	
 	@Autowired
