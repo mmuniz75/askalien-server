@@ -16,7 +16,7 @@ import edu.muniz.askalien.model.Question;
 import edu.muniz.askalien.service.QuestionService;
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200", "http://aws-website-askalien-8enqo.s3-website-us-east-1.amazonaws.com"})
+@CrossOrigin(origins = {"http://askalien.men","http://localhost:4200", "http://aws-website-askalien-8enqo.s3-website-us-east-1.amazonaws.com","https://dtlfems0yypcj.cloudfront.net"})
 public class QuestionRest {
 	
 	@Autowired
