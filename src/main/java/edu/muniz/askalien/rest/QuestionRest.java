@@ -3,7 +3,6 @@ package edu.muniz.askalien.rest;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,10 +15,6 @@ import edu.muniz.askalien.model.Question;
 import edu.muniz.askalien.service.QuestionService;
 
 @RestController
-<<<<<<< HEAD
-=======
-@CrossOrigin(origins = {"http://localhost","http://askalien.men","http://localhost:4200", "http://aws-website-askalien-8enqo.s3-website-us-east-1.amazonaws.com","https://dtlfems0yypcj.cloudfront.net"})
->>>>>>> 5d4b3659a819c680d08131e3ecfbadc3769b45af
 public class QuestionRest {
 	
 	@Autowired
