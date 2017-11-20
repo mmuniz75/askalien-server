@@ -1,5 +1,7 @@
 target/
 !.mvn/wrapper/maven-wrapper.jar
+.env
+Procfile
 
 ### STS ###
 .apt_generated

@@ -26,6 +26,8 @@ public class LuceneHelper implements IndexingHelper {
 
 	private LuceneHelper() {
 		this.indexingPath = System.getenv("LUCENE_INDEX_DIR");
+		if(this.indexingPath==null || this.indexingPath.equals("."))
+			this.indexingPath = this.getClass().getResource("/lucene").getPath();	
 	};
 
 	private String indexingPath;
