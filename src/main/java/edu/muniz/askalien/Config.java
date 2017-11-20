@@ -15,12 +15,14 @@ public class Config {
 	            @Override
 	            public void addCorsMappings(CorsRegistry registry) {
 	                registry.addMapping("/**/**")
+	                /*
 	                .allowedOrigins("http://askalien.men",
 	                				"http://localhost:4200",
 	                				"http://localhost",
 	                				"http://aws-website-askalien-8enqo.s3-website-us-east-1.amazonaws.com",
 	                				"https://dtlfems0yypcj.cloudfront.net",
 	                				"http://askalien-server.s3-website-us-east-1.amazonaws.com")
+	                */				
 	                ;
 	            }
 	        };
