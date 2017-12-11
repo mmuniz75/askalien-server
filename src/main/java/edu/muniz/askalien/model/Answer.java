@@ -19,7 +19,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name="answer")
-public class Answer implements Serializable,Model,Comparable<Answer>{
+public class Answer implements Serializable,Model{
 
 	private static final long serialVersionUID = -7271715793384643421L;
 
@@ -81,9 +81,6 @@ public class Answer implements Serializable,Model,Comparable<Answer>{
 		return date;
 	}
 
-
-	@Transient
-	private Float score;
 	
 	@Transient
 	private Long clicks;
@@ -94,14 +91,6 @@ public class Answer implements Serializable,Model,Comparable<Answer>{
 
 	public void setClicks(Long clicks) {
 		this.clicks = clicks;
-	}
-
-	public Float getScore() {
-		return score;
-	}
-
-	public void setScore(Float score) {
-		this.score = score;
 	}
 
 	public Integer getId() {
@@ -161,16 +150,6 @@ public class Answer implements Serializable,Model,Comparable<Answer>{
 	}
 
 
-	@Override
-	public int compareTo(Answer answer) {
-		int compare = 0;
-		if(this.score > answer.getScore())
-			compare = -1;
-		
-		if(this.score < answer.getScore())
-			compare = 1;
-				
-		return compare;
-	}
+	
 
 }

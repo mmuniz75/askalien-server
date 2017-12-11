@@ -1,6 +1,7 @@
 package edu.muniz.askalien.dao;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.util.Arrays;
 import java.util.List;
@@ -23,9 +24,16 @@ public class AnswerRepositoryTests {
 
 	@Test
 	public void testFindQuestions(){
-		List<Integer> ids = Arrays.asList(1,2,3);
-		List<AnswerSummary> answers = repo.findByIdIn(ids);
-		assertEquals(answers.size(),3);
+		final String SUBJECT = "Is the planet Earth is undergoing a transformation in the near future?";
+		List<AnswerSummary> answers = repo.findByText(SUBJECT);
+		assertEquals(answers.get(0).getSubject(),SUBJECT);
+	}
+	
+	@Test
+	public void testFindContent(){
+		final String CONTENT = "%contact can happen in your lifetime%";
+		List<AnswerSummary> answers = repo.findByText(CONTENT);
+		assertEquals(answers.get(0).getSubject(),"Is your time of interaction with us in the forum limited? How long? Also, will we meet you & others personally during our lifetime?");
 	}
 	
 	@Test
@@ -33,4 +41,16 @@ public class AnswerRepositoryTests {
 		Answer answer = repo.findOne(1);
 		assertEquals(answer.getSubject(),"Is the planet Earth is undergoing a transformation in the near future?");
 	}	
+	
+	@Test
+	public void testFindKeyWords(){
+		List<Answer> answers = repo.findByKeyWorlds("antart:*");
+		assertTrue(answers.size()>=2);
+	}
+	
+	@Test
+	public void testFindKeyWords2(){
+		List<Answer> answers = repo.findByKeyWorlds("zigs");
+		assertTrue(answers.size()>=2);
+	}
 }
