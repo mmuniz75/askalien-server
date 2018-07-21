@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import edu.muniz.askalien.dao.CountryRepository;
 import edu.muniz.askalien.model.Country;
+import edu.muniz.askalien.repository.rest.CountryRepositoryRest;
 
 @Service
 public class CountryService {
@@ -15,6 +16,8 @@ public class CountryService {
 	@Autowired
 	private CountryRepository countryRepo;
 	
+	@Autowired
+	private CountryRepositoryRest countryRepoRest;
 	
 	public String getCountryFromIP(String ip) {
 		String country = "";
@@ -23,16 +26,18 @@ public class CountryService {
 			Country countryObj =  countryRepo.findByIp(ip);
 			
 			if(countryObj==null){
-				country= getCountryFromIPFinder(ip);
+				country= countryRepoRest.getCountryByIP(ip);
 				
-				if(country.indexOf(",")>-1)
-					country = country.substring(0,country.indexOf(","));
-				
-				if(country.equals("KOREA"))
-					country = "SOUTH KOREA";
-				
-				countryObj = new Country(ip,country);
-				countryRepo.save(countryObj);
+				if(!country.equals("Unknown Country")) { 
+					if(country.indexOf(",")>-1)
+						country = country.substring(0,country.indexOf(","));
+					
+					if(country.equals("KOREA"))
+						country = "SOUTH KOREA";
+					
+					countryObj = new Country(ip,country);
+					countryRepo.save(countryObj);
+				}	
 			}else
 				country = countryObj.getCountry(); 
 		
