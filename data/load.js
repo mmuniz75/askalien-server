@@ -21,13 +21,14 @@ const load = async () =>  {
     const res = await client.query('select id,subject,content from answer order by id');
     res.rows.forEach( (row) => {
         const index = {
-            index : { _index: "answers",
+            index : { _index: "answers-v3",
                       _type : "_doc",
                       _id : row.id }
         }
         delete row.id;
         row.content = row.content.replace(/<\/?[^>]+(>|$)/g, "");
-
+        row.content = row.content.replace(/&nbsp;/g, "");
+        
         fs.appendFileSync(file,JSON.stringify(index) + '\n','UTF-8');
         fs.appendFileSync(file,JSON.stringify(row) + '\n','UTF-8');
     })
