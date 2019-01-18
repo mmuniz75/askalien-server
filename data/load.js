@@ -18,19 +18,21 @@ const load = async () =>  {
 
     await client.connect();
 
-    const res = await client.query('select id,subject,content from answer where id > 1300');
+    const res = await client.query('select id,subject,content from answer order by id');
     res.rows.forEach( (row) => {
         const index = {
-            index : { _index: "questions",
+            index : { _index: "answers",
                       _type : "_doc",
                       _id : row.id }
         }
         delete row.id;
+        row.content = row.content.replace(/<\/?[^>]+(>|$)/g, "");
 
         fs.appendFileSync(file,JSON.stringify(index) + '\n','UTF-8');
         fs.appendFileSync(file,JSON.stringify(row) + '\n','UTF-8');
     })
     
+    console.log(res.rows.length + " rows imported !")
     await client.end();
 }
 

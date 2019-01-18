@@ -1,0 +1,776 @@
+{
+	"id": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+	"name": "Pessoal",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "ElastickSearch",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"order": [
+				"f966e8af-483e-4f80-cadb-31862803895f",
+				"5c0aad5c-fb5a-a9f8-73c9-f9f857de8c6b",
+				"d401223a-be53-3f39-3b90-11b169cfb2e0",
+				"291e99ce-9701-5dab-c6f9-ff48a1b7f3a2",
+				"d6e5c055-03a6-673a-8bc7-62a206593175",
+				"6ff5161f-7282-0cc1-9864-413139ba3441"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "cabd53dd-a4ef-b324-435e-b1082ade626e"
+		},
+		{
+			"name": "bestworld",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"order": [
+				"0a603da9-cb15-43fd-7ed0-88b4df9751d1",
+				"bed19dd1-20cc-6893-cab2-10a407a9d4e4",
+				"c4096883-e821-ddd5-feb7-e67672b42732",
+				"7b55216b-c5d7-85a5-aca8-8e833978e7be",
+				"763067bb-f86f-6c8f-05cb-0670dbbabc7f",
+				"9b5f2069-2e94-7275-7f3b-71eac5a2c47a",
+				"72649d25-1c0e-a2a1-ce0f-b66c4bcc9516",
+				"c5bc1fb4-eee5-fc0a-ee75-e1b9b3d2feb2",
+				"6c8f3c95-a6aa-2c8c-b8ff-58134403d735",
+				"add317cd-597a-1fa2-31bc-69530abaf3a9"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "f871e1d5-d907-90ee-7e34-fbdca2d6acae"
+		},
+		{
+			"name": "firebase",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"order": [
+				"670e8284-99b4-86fe-e794-31d2e3e94bc9",
+				"2864681b-2fd6-4a42-b9c8-6dc71a5530ae",
+				"180581dc-3679-b8c6-3117-d03e6f92cb95",
+				"03952c0a-fe25-a4a7-eaec-b40360003ea9"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "80c7a711-c7e7-3ca5-1557-039c1eface10"
+		}
+	],
+	"folders_order": [
+		"80c7a711-c7e7-3ca5-1557-039c1eface10",
+		"f871e1d5-d907-90ee-7e34-fbdca2d6acae",
+		"cabd53dd-a4ef-b324-435e-b1082ade626e"
+	],
+	"timestamp": 1543158986474,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "03952c0a-fe25-a4a7-eaec-b40360003ea9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://bestworld-eaa92.firebaseio.com/usuarios/-LTvkjCHnCP-LdzRGPzg.json?auth=eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4NGM0NWM4ZWJmOGRkYmU1NTY5OTE1YzYzNzk5ZDUxZjMyMzY1OTUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYmVzdHdvcmxkLWVhYTkyIiwibmFtZSI6ImFkbWluIiwiYWRtaW4iOnRydWUsImF1ZCI6ImJlc3R3b3JsZC1lYWE5MiIsImF1dGhfdGltZSI6MTU0NTA0MTY2NiwidXNlcl9pZCI6ImxTdTFQM3JUYldkaEhTdjNDRHZ0eEZsSm5wMzIiLCJzdWIiOiJsU3UxUDNyVGJXZGhIU3YzQ0R2dHhGbEpucDMyIiwiaWF0IjoxNTQ1MDQxNjY2LCJleHAiOjE1NDUwNDUyNjYsImVtYWlsIjoibW11bml6czE5NzVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIm1tdW5penMxOTc1QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.Rs5FPfpGx9MWRGU4nbwv7hvNwNYk7UqVygE1DmJO4-T7B0M4YGNreZ-mhsc_mH0wegF_JdCCHD9jQbF8If20cJCWWeDAUkZ3ybDyaGT1DCakuh6fZhMde9IqHQPMcIGRFqjtXl2FuTXOqNhEQSF-O6gexle8r6E5W6c9fdnw7gu6C9UOHYB98FqVjoxdIw4FZx1jHsDmRWqrRLke7WuIMJzHtUSOGo9upg5Mn6pdnRQXWoeKqEhO9GmA_de8UI4EiZYswrptG_IsY1XOLp7kmSStoSQHIWcO05BWZP4AYowdJPK5d-vvs9AHo-h9BpdXEXArY3Worn0TwoYb2BDcUg",
+			"folder": "80c7a711-c7e7-3ca5-1557-039c1eface10",
+			"queryParams": [
+				{
+					"key": "auth",
+					"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4NGM0NWM4ZWJmOGRkYmU1NTY5OTE1YzYzNzk5ZDUxZjMyMzY1OTUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYmVzdHdvcmxkLWVhYTkyIiwibmFtZSI6ImFkbWluIiwiYWRtaW4iOnRydWUsImF1ZCI6ImJlc3R3b3JsZC1lYWE5MiIsImF1dGhfdGltZSI6MTU0NTA0MTY2NiwidXNlcl9pZCI6ImxTdTFQM3JUYldkaEhTdjNDRHZ0eEZsSm5wMzIiLCJzdWIiOiJsU3UxUDNyVGJXZGhIU3YzQ0R2dHhGbEpucDMyIiwiaWF0IjoxNTQ1MDQxNjY2LCJleHAiOjE1NDUwNDUyNjYsImVtYWlsIjoibW11bml6czE5NzVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIm1tdW5penMxOTc1QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.Rs5FPfpGx9MWRGU4nbwv7hvNwNYk7UqVygE1DmJO4-T7B0M4YGNreZ-mhsc_mH0wegF_JdCCHD9jQbF8If20cJCWWeDAUkZ3ybDyaGT1DCakuh6fZhMde9IqHQPMcIGRFqjtXl2FuTXOqNhEQSF-O6gexle8r6E5W6c9fdnw7gu6C9UOHYB98FqVjoxdIw4FZx1jHsDmRWqrRLke7WuIMJzHtUSOGo9upg5Mn6pdnRQXWoeKqEhO9GmA_de8UI4EiZYswrptG_IsY1XOLp7kmSStoSQHIWcO05BWZP4AYowdJPK5d-vvs9AHo-h9BpdXEXArY3Worn0TwoYb2BDcUg",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1545045230024,
+			"name": "Delete user",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "0a603da9-cb15-43fd-7ed0-88b4df9751d1",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://bestworld-security.herokuapp.com/login",
+			"folder": "f871e1d5-d907-90ee-7e34-fbdca2d6acae",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1543586458327,
+			"name": "Bestworld login Heroku",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "0a603da9-cb15-43fd-7ed0-88b4df9751d1",
+			"rawModeData": "{\n\t\"user\" : \"mmunizs1975@gmail.com\",\n\t\"password\" : \"zaxxon\"\n}"
+		},
+		{
+			"id": "180581dc-3679-b8c6-3117-d03e6f92cb95",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/setAccountInfo?key=AIzaSyCEZ0Vr-6LjTQkji4xZuA79_LI_d6tNmUc",
+			"folder": "80c7a711-c7e7-3ca5-1557-039c1eface10",
+			"queryParams": [
+				{
+					"key": "key",
+					"value": "AIzaSyCEZ0Vr-6LjTQkji4xZuA79_LI_d6tNmUc",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1545220492302,
+			"name": "Send password",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": "{ \"email\": \"teste2@gmail.com\",\n  \"password\": \"demo123\",\n  \"returnSecureT2oken\": true, \n  \"iToken\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4NGM0NWM4ZWJmOGRkYmU1NTY5OTE1YzYzNzk5ZDUxZjMyMzY1OTUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYmVzdHdvcmxkLWVhYTkyIiwiYXVkIjoiYmVzdHdvcmxkLWVhYTkyIiwiYXV0aF90aW1lIjoxNTQ1MjIwMjk4LCJ1c2VyX2lkIjoiNmp5QXBOa1BlR2NBWncxOUI0TnExc3puMXlIMiIsInN1YiI6IjZqeUFwTmtQZUdjQVp3MTlCNE5xMXN6bjF5SDIiLCJpYXQiOjE1NDUyMjAyOTgsImV4cCI6MTU0NTIyMzg5OCwiZW1haWwiOiJ0ZXN0ZUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsidGVzdGVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.ZZHtfBEnoCZwAuAslemhiSU7yFBMVgMKU2EwPo27WjRe4JAMoIHYdL8isooQfZu4W9-MOnfPbAf1mR6LmIu721WfrCOubJcC2cgg28q_AfOxtv-Tn9EQtD6yPiUJL5o2o81KoodLj531Gvuy4JVugLqBwt5mlr6di9PKCG0XxsmBLgVSRikcfoiT-1R7qqEdEjs96FS8CFLJqH4PqHsyDPGwSoXNBMDZsN4MB0a-d1GBE85cLUZzJtq8S7liDtQ4WZIpQwoufHnMz0AMBdeop2IJgWVGNutL4EfY6LQAFaOlWU7_xjXodxoV8czJBt15xLpJ63WJ4M9472AmQzDPEA\"\n\t\n}"
+		},
+		{
+			"id": "2864681b-2fd6-4a42-b9c8-6dc71a5530ae",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/setAccountInfo?key=AIzaSyCEZ0Vr-6LjTQkji4xZuA79_LI_d6tNmUc",
+			"folder": "80c7a711-c7e7-3ca5-1557-039c1eface10",
+			"queryParams": [
+				{
+					"key": "key",
+					"value": "AIzaSyCEZ0Vr-6LjTQkji4xZuA79_LI_d6tNmUc",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1545220492302,
+			"name": "Set user info firebase",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": "{ \"email\": \"teste2@gmail.com\",\n  \"password\": \"demo123\",\n  \"returnSecureT2oken\": true, \n  \"iToken\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4NGM0NWM4ZWJmOGRkYmU1NTY5OTE1YzYzNzk5ZDUxZjMyMzY1OTUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYmVzdHdvcmxkLWVhYTkyIiwiYXVkIjoiYmVzdHdvcmxkLWVhYTkyIiwiYXV0aF90aW1lIjoxNTQ1MjIwMjk4LCJ1c2VyX2lkIjoiNmp5QXBOa1BlR2NBWncxOUI0TnExc3puMXlIMiIsInN1YiI6IjZqeUFwTmtQZUdjQVp3MTlCNE5xMXN6bjF5SDIiLCJpYXQiOjE1NDUyMjAyOTgsImV4cCI6MTU0NTIyMzg5OCwiZW1haWwiOiJ0ZXN0ZUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsidGVzdGVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.ZZHtfBEnoCZwAuAslemhiSU7yFBMVgMKU2EwPo27WjRe4JAMoIHYdL8isooQfZu4W9-MOnfPbAf1mR6LmIu721WfrCOubJcC2cgg28q_AfOxtv-Tn9EQtD6yPiUJL5o2o81KoodLj531Gvuy4JVugLqBwt5mlr6di9PKCG0XxsmBLgVSRikcfoiT-1R7qqEdEjs96FS8CFLJqH4PqHsyDPGwSoXNBMDZsN4MB0a-d1GBE85cLUZzJtq8S7liDtQ4WZIpQwoufHnMz0AMBdeop2IJgWVGNutL4EfY6LQAFaOlWU7_xjXodxoV8czJBt15xLpJ63WJ4M9472AmQzDPEA\"\n\t\n}"
+		},
+		{
+			"id": "291e99ce-9701-5dab-c6f9-ff48a1b7f3a2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://search-askaliensearch-uqm54ufvnxbritmgfmus6uec2a.us-east-1.es.amazonaws.com/answers/_doc/1?filter_path=found",
+			"queryParams": [
+				{
+					"key": "filter_path",
+					"value": "found",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1547841262556,
+			"name": "ElastickSearch Put",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": "{\"question\": \"Qual a porcetagem de acertos ?\", \n\"answer\": \"Ainda nao sabemos estamos testando, melhorando dados\"}"
+		},
+		{
+			"id": "5c0aad5c-fb5a-a9f8-73c9-f9f857de8c6b",
+			"headers": "",
+			"headerData": [],
+			"url": "https://search-askaliensearch-uqm54ufvnxbritmgfmus6uec2a.us-east-1.es.amazonaws.com/answers/_doc/1315",
+			"folder": "cabd53dd-a4ef-b324-435e-b1082ade626e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1547841234695,
+			"name": "ElastickSearch get ID",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": []
+		},
+		{
+			"id": "670e8284-99b4-86fe-e794-31d2e3e94bc9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/getAccountInfo?key=AIzaSyCEZ0Vr-6LjTQkji4xZuA79_LI_d6tNmUc",
+			"folder": "80c7a711-c7e7-3ca5-1557-039c1eface10",
+			"queryParams": [
+				{
+					"key": "key",
+					"value": "AIzaSyCEZ0Vr-6LjTQkji4xZuA79_LI_d6tNmUc",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1543609409768,
+			"name": "Busca user info firebase",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": "{\n  \"idToken\":  \"eyJhbGciOiJSUzI1NiIsImtpZCI6IjIzNTBiNWY2NDM0Zjc2Y2NiM2IxMTlmZGQ4OGQxMzhjOWFjNTVmY2UiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYmVzdHdvcmxkLWVhYTkyIiwiYWRtaW4iOnRydWUsImF1ZCI6ImJlc3R3b3JsZC1lYWE5MiIsImF1dGhfdGltZSI6MTU0MzYwOTI0NywidXNlcl9pZCI6ImxTdTFQM3JUYldkaEhTdjNDRHZ0eEZsSm5wMzIiLCJzdWIiOiJsU3UxUDNyVGJXZGhIU3YzQ0R2dHhGbEpucDMyIiwiaWF0IjoxNTQzNjA5MjQ3LCJleHAiOjE1NDM2MTI4NDcsImVtYWlsIjoibW11bml6czE5NzVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIm1tdW5penMxOTc1QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.jRXQMT42aFrN32FNH-p4rqjINHlr4Xrcu4O4OV7j06wiWPtnbSc7b4budxVaLYSCXRVtyivTPq6VeG8DujTL5JfWXzgExkzfKp_y2hSgCn9hZoNC5pzt7WyquPELBo_bozJhDnh0ZO2ZjWw-mdMMebOvAR1JT3iEIgNVuNqXrffOyJFm-pAvNxC23b55by8qAHA2fz_5I3aUTmaf0NEN4f23UGYwzSfqUhaGWugviEdn2n2RWsl9TKrGvvoprrS6rdSfxcZEEdrbfkKTSO2QxLFZe1yye--FXcPeZBbZM-kXQm5LkUKs7Sipts_4X7AXEni6hXrkGRLeaZ2rCn5z8Q\"\n}"
+		},
+		{
+			"id": "6c8f3c95-a6aa-2c8c-b8ff-58134403d735",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3030/login",
+			"folder": "f871e1d5-d907-90ee-7e34-fbdca2d6acae",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1546871058587,
+			"name": "Bestworld  login demo",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": "{\n\t\"user\" : \"betterworldemail@gmail.com\",\n\t\"password\" : \"demo123\"\n}"
+		},
+		{
+			"id": "6ff5161f-7282-0cc1-9864-413139ba3441",
+			"headers": "",
+			"headerData": [],
+			"url": "https://search-askaliensearch-uqm54ufvnxbritmgfmus6uec2a.us-east-1.es.amazonaws.com/answers/_search?q=krulians~&filter_path=hits.hits._id,hits.hits._source.subject",
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "krulians~",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "filter_path",
+					"value": "hits.hits._id,hits.hits._source.subject",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1547841202873,
+			"name": "ElastickSearch get resumido",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": []
+		},
+		{
+			"id": "72649d25-1c0e-a2a1-ce0f-b66c4bcc9516",
+			"headers": "Content-Type: application/json\naccess-token: {{token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "access-token",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:3030/users/teste@gmail.com",
+			"folder": "f871e1d5-d907-90ee-7e34-fbdca2d6acae",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1545410167649,
+			"name": "Bestworld delete users",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "763067bb-f86f-6c8f-05cb-0670dbbabc7f",
+			"headers": "Content-Type: application/json\naccess-token: eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4NGM0NWM4ZWJmOGRkYmU1NTY5OTE1YzYzNzk5ZDUxZjMyMzY1OTUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYmVzdHdvcmxkLWVhYTkyIiwibmFtZSI6ImFkbWluIiwiYWRtaW4iOnRydWUsImF1ZCI6ImJlc3R3b3JsZC1lYWE5MiIsImF1dGhfdGltZSI6MTU0NTI0MTYwNSwidXNlcl9pZCI6ImxTdTFQM3JUYldkaEhTdjNDRHZ0eEZsSm5wMzIiLCJzdWIiOiJsU3UxUDNyVGJXZGhIU3YzQ0R2dHhGbEpucDMyIiwiaWF0IjoxNTQ1MjQxNjA1LCJleHAiOjE1NDUyNDUyMDUsImVtYWlsIjoibW11bml6czE5NzVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsibW11bml6czE5NzVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.kDigemRwZ1f5msrbtYWlzeXrO1K0Tk96W36DjlCYGvNKuL42cXKxqcHAUym2f_OkQEMGx4yDZ6ezsibssA6GnSU2Q4ooN8wv1aR4chjETv3LsAoAESJhEs43jEIL-GOLGWJNP4EDoEtxy5xLBVwLZ6eXdPm7SQDQjAHSiKynSRph-6AFs-zXGHkHmKF01G81UGBgXJb_7ZGI_EsTi40CkX5KGj8exDjs3noO84Cx8G-F-t_HXRO4eFJsat2iv6CsJSjwAZjA7mrQ9Krbko6TOPCDDG03R06b6DiK0vhSHWsI7yGxiKIpMEFRMr4_mU75iv-oV5g5ZbEEcx91tS7KBQ\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "access-token",
+					"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4NGM0NWM4ZWJmOGRkYmU1NTY5OTE1YzYzNzk5ZDUxZjMyMzY1OTUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYmVzdHdvcmxkLWVhYTkyIiwibmFtZSI6ImFkbWluIiwiYWRtaW4iOnRydWUsImF1ZCI6ImJlc3R3b3JsZC1lYWE5MiIsImF1dGhfdGltZSI6MTU0NTI0MTYwNSwidXNlcl9pZCI6ImxTdTFQM3JUYldkaEhTdjNDRHZ0eEZsSm5wMzIiLCJzdWIiOiJsU3UxUDNyVGJXZGhIU3YzQ0R2dHhGbEpucDMyIiwiaWF0IjoxNTQ1MjQxNjA1LCJleHAiOjE1NDUyNDUyMDUsImVtYWlsIjoibW11bml6czE5NzVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsibW11bml6czE5NzVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.kDigemRwZ1f5msrbtYWlzeXrO1K0Tk96W36DjlCYGvNKuL42cXKxqcHAUym2f_OkQEMGx4yDZ6ezsibssA6GnSU2Q4ooN8wv1aR4chjETv3LsAoAESJhEs43jEIL-GOLGWJNP4EDoEtxy5xLBVwLZ6eXdPm7SQDQjAHSiKynSRph-6AFs-zXGHkHmKF01G81UGBgXJb_7ZGI_EsTi40CkX5KGj8exDjs3noO84Cx8G-F-t_HXRO4eFJsat2iv6CsJSjwAZjA7mrQ9Krbko6TOPCDDG03R06b6DiK0vhSHWsI7yGxiKIpMEFRMr4_mU75iv-oV5g5ZbEEcx91tS7KBQ",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3030/users/teste@gmail.com",
+			"folder": "f871e1d5-d907-90ee-7e34-fbdca2d6acae",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1545241947518,
+			"name": "Bestworld  update user",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": "{\n\t\"role\" : \"editor\"\n}"
+		},
+		{
+			"id": "7b55216b-c5d7-85a5-aca8-8e833978e7be",
+			"headers": "Content-Type: application/json\naccess-token: {{token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "access-token",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:3030/users",
+			"folder": "f871e1d5-d907-90ee-7e34-fbdca2d6acae",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1545410177468,
+			"name": "Bestworld  create user",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": "{\n\t\"user\" : \"teste@gmail.com\",\n\t\"password\" : \"demo123\",\n\t\"role\" : \"default\"\n}"
+		},
+		{
+			"id": "9b5f2069-2e94-7275-7f3b-71eac5a2c47a",
+			"headers": "Content-Type: application/json\naccess-token: {{token}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "access-token",
+					"value": "{{token}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:3030/users",
+			"folder": "f871e1d5-d907-90ee-7e34-fbdca2d6acae",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1545410134927,
+			"name": "Bestworld list users",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": "{\n\t\"user\" : \"teste@gmail.com\",\n\t\"password\" : \"demo123\",\n\t\"role\" : \"default\"\n}"
+		},
+		{
+			"id": "add317cd-597a-1fa2-31bc-69530abaf3a9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3030/login",
+			"folder": "f871e1d5-d907-90ee-7e34-fbdca2d6acae",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1545220179203,
+			"name": "Bestworld  login default",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "add317cd-597a-1fa2-31bc-69530abaf3a9",
+			"rawModeData": "{\n\t\"user\" : \"danilofeigl@gmail.com\",\n\t\"password\" : \"danroman2018\"\n}"
+		},
+		{
+			"id": "bed19dd1-20cc-6893-cab2-10a407a9d4e4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3030/login",
+			"folder": "f871e1d5-d907-90ee-7e34-fbdca2d6acae",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"token\", jsonData.token);\n\n\n\n\n\n\n\n\n\n\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1545410092142,
+			"name": "Bestworld  login",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": "{\n\t\"user\" : \"mmunizs1975@gmail.com\",\n\t\"password\" : \"zaxxon75\"\n}"
+		},
+		{
+			"id": "c4096883-e821-ddd5-feb7-e67672b42732",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3030/users/mmunizs1975@gmail.com/password/reset",
+			"folder": "f871e1d5-d907-90ee-7e34-fbdca2d6acae",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1545329953624,
+			"name": "Bestworld  reset password",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "c5bc1fb4-eee5-fc0a-ee75-e1b9b3d2feb2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3030/login",
+			"folder": "f871e1d5-d907-90ee-7e34-fbdca2d6acae",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1544551789609,
+			"name": "Bestworld  login editor",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": "{\n\t\"user\" : \"wabbiz@gmail.com\",\n\t\"password\" : \"walaltoparaiso\"\n}"
+		},
+		{
+			"id": "d401223a-be53-3f39-3b90-11b169cfb2e0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://search-askaliensearch-uqm54ufvnxbritmgfmus6uec2a.us-east-1.es.amazonaws.com/_bulk?filter_path=took,errors",
+			"queryParams": [
+				{
+					"key": "filter_path",
+					"value": "took,errors",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "binary",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1547840923885,
+			"name": "ElastickSearch Load",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "d6e5c055-03a6-673a-8bc7-62a206593175",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://search-askaliensearch-uqm54ufvnxbritmgfmus6uec2a.us-east-1.es.amazonaws.com/questions",
+			"folder": "cabd53dd-a4ef-b324-435e-b1082ade626e",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1547840123154,
+			"name": "ElastickSearch Delete",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "d6e5c055-03a6-673a-8bc7-62a206593175",
+			"rawModeData": "{\"question\": \"Qual a porcetagem de acertos ?\", \n\"answer\": \"Ainda nao sabemos estamos testando, melhorando dados\"}"
+		},
+		{
+			"id": "f966e8af-483e-4f80-cadb-31862803895f",
+			"headers": "",
+			"headerData": [],
+			"url": "https://search-askaliensearch-uqm54ufvnxbritmgfmus6uec2a.us-east-1.es.amazonaws.com/answers/_search?q=information",
+			"folder": "cabd53dd-a4ef-b324-435e-b1082ade626e",
+			"queryParams": [
+				{
+					"key": "q",
+					"value": "information",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1547841321251,
+			"name": "ElastickSearch get",
+			"description": "",
+			"collectionId": "d0271dea-25ed-ae6e-fe82-944b5e334bf9",
+			"responses": []
+		}
+	]
+}
