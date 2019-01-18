@@ -25,3 +25,5 @@ dist/
 nbdist/
 .nb-gradle/
 /mvn_install.bat
+data/node_modules/.bin/semver
+node_modules/
