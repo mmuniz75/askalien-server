@@ -25,8 +25,8 @@ public class AnswerServiceTests {
 	public void searchQuestions(){
 		List<Answer> answers = service.searchAnswers("zigs");
 		
-		assertTrue(answers.size()>=2);
-		assertTrue(answers.get(0).getSubject().contains("Zigs"));
+		assertTrue(answers.size()>=7);
+		assertTrue(answers.get(0).getSubject().contains("night walkers"));
 	}
 
 }
