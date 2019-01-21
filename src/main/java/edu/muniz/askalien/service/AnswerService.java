@@ -1,6 +1,8 @@
 package edu.muniz.askalien.service;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,9 +29,13 @@ public class AnswerService {
 		SearchResponse response = search.findByKeyWorlds(question);
 		//List<Answer> answers = repo.findByKeyWorlds(question);
 		
-		List<Answer> answers = response.getHits().getHits().stream().map(
+		List<Answer> answers = Collections.emptyList();
+		
+		if(Objects.nonNull(response.getHits())) {
+			answers = response.getHits().getHits().stream().map(
 					   hit -> new Answer(hit.getId(),hit.getSource().getSubject())
 				      ).collect(Collectors.toList());
+		}	
 		
 		return answers;
 	}
